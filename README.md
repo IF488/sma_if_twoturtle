@@ -62,3 +62,7 @@ Finalement, téléopérer le robot leader avec:
 ```
 ROS_NAMESPACE=tb3_0 rosrun turtlebot3_teleop turtlebot3_teleop_key
 ```
+
+Note 1: La map utilisé est fourni dans le fichier. Placer map.yaml et map.pgm dans le fichier HOME de votre PC. Vous pouvez aussi placer la map dans un autre fichier à condition de changer l'argument dans la command ci-dessous.  
+  
+Note 2: RViz consomme beaucoup de resource, il est conseillé de fermé RViz une fois que vous avez vérifier que tous fonctionne.
