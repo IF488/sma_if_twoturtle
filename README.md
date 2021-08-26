@@ -28,6 +28,8 @@ Dans un deuxième terminal, lancer le map_server:
 rosrun map_server map_server ~/map.yaml
 ```
 
+Note: : La map utilisé est fourni dans le fichier. Placer map.yaml et map.pgm dans le fichier HOME de votre PC. 
+
 ### Lancer AMCL pour chaque robots
 Dans un troisième terminal, lancer AMCL pour le premier robot:
 
