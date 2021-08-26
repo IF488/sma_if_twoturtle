@@ -14,18 +14,21 @@ source devel/setup.bash
 ```
 
 ## Execution
+### Lancer Gazebo et les deux Turtlebots
 Dans un premier terminal, lancer la simulation Gazebo:
 
 ```
 roslaunch sma_if_twoturtle two_in_turtle_world.launch
 ```
 
+### Lancer map_server
 Dans un deuxième terminal, lancer le map_server:
 
 ```
 rosrun map_server map_server ~/map.yaml
 ```
 
+### Lancer AMCL pour chaque robots
 Dans un troisième terminal, lancer AMCL pour le premier robot:
 
 ```
@@ -51,12 +54,14 @@ Optionnellement, lancer RViz pour verifier que tous fonctionne:
 roslaunch sma_if_twoturtle multi_rviz.launch
 ```
 
+### Lancer le noeud leader-follower
 Si tous fonctionne correctement, vous pouvez lancer le noeud leader_follower.py dans un autre terminal:
 
 ```
 rosrun sma_if_twoturtle leader_follower.py
 ```
 
+### Téléopérer le leader
 Finalement, téléopérer le robot leader avec:
 
 ```
